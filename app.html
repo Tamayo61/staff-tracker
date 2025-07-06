@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Mon Espace</title>
+    <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+<canvas id="particles"></canvas>
+
+<header>
+    <h1 id="welcome-message">Bienvenue !</h1>
+    <button id="logout-btn">Déconnexion</button>
+</header>
+
+<nav>
+    <button id="show-chrono" class="active-btn">Chrono</button>
+    <button id="show-historique">Historique</button>
+</nav>
+
+<main>
+    <section id="chrono-section" class="active-section">
+        <h2>Chronomètre</h2>
+        <div id="chrono-display">00:00:00</div>
+        <div style="display: flex; gap: 1rem; justify-content: center;">
+            <button id="start-btn">Démarrer</button>
+            <button id="stop-btn" disabled>Arrêter</button>
+            <button id="reset-btn">Réinitialiser</button>
+        </div>
+    </section>
+
+    <section id="historique-section" style="display:none;">
+        <h2>Historique des temps</h2>
+        <button id="load-historique">Actualiser l'historique</button>
+        <div id="historique-list"></div>
+    </section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
